@@ -162,7 +162,7 @@ h1,
     background: var(--bg);
 }
 .introduction-banner .title {
-    margin: 20px 0;
+    margin: 10vh 0 20px 0;
     color: var(--secondary);
     font-weight: 600;
 }
@@ -172,14 +172,43 @@ h1,
     text-align: justify;
 }
 
+.partnership-supplier {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+.partnership-supplier .title {
+    margin: 10vh 0 15px 0;
+    width: 100%;
+    text-align: center;
+    color: var(--secondary);
+    font-weight: 600;
+}
+.partnership-supplier .brand-logo {
+    width: calc(70vw / 6);
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    object-position: center;
+    image-rendering: optimizeSpeed;
+    background: white;
+}
+.partnership-supplier .brand-logo:nth-child(2) {
+    border-radius: 6px 0 0 6px;
+}
+.partnership-supplier .brand-logo:nth-child(7) {
+    border-radius: 0 6px 6px 0;
+}
+
 .service-product-banner {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
+    gap: 2%;
 }
 .service-product-banner .title {
-    margin: 20px 0 15px 0;
+    margin: 10vh 0 15px 0;
     width: 100%;
     text-align: center;
     color: var(--secondary);
@@ -187,11 +216,12 @@ h1,
 }
 .service-product-banner .Card {
     margin: 0;
-    width: calc(95% / 4);
+    width: calc(90% / 4);
     height: 40vh;
     display: flex;
     flex-direction: column;
     background-color: var(--primary);
+    box-shadow: 0 5px 14px 1px rgba(255, 255, 255, 0.8);      
     border: 1px solid var(--secondary);
     border-radius: 5px;
 }
@@ -222,7 +252,7 @@ h1,
     gap: 10px;
 }
 .news-banner .title {
-    margin: 20px 0 15px 0;
+    margin: 10vh 0 15px 0;
     width: 100%;
     text-align: center;
     color: var(--secondary);
@@ -258,7 +288,7 @@ h1,
     justify-content: center;
 }
 .gallery-banner .title {
-    margin: 30px 0 20px 0;
+    margin: 10vh 0 20px 0;
     width: 100%;
     text-align: center;
     color: var(--secondary);
@@ -290,10 +320,10 @@ footer {
 .copyright-mark {
     margin: calc(10px + 1.5%) 0 5px 0;
     width: 100%;
-    font-size: 14px;
     text-align: center;
 }
 .footer-group {
+    margin-top: 10vh;
     padding: 20px 5%;
     width: calc(100% / 3);
     height: 100%;
@@ -340,6 +370,10 @@ footer {
         max-width: 80%;
     }
 
+    .partnership-supplier .brand-logo {
+        width: calc(88vw / 6);
+    }
+
     .service-product-banner .Card {
         width: 80%;
         height: auto;
@@ -356,5 +390,8 @@ footer {
     }
     .footer-group:nth-child(1) {
         padding: 10px 2%;
+    }
+    .copyright-mark .copyright {
+        font-size: calc(10px + 0.8vw);
     }
 }
