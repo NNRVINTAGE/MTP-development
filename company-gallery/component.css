@@ -52,4 +52,5 @@
     object-position: center;
     border: 1px solid var(--secondary);
     border-radius: 5px;
+    image-rendering: optimizeSpeed;
 }
