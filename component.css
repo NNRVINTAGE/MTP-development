@@ -225,7 +225,7 @@ h1,
 }
 .news-cards {
     margin: 0;
-    width: calc(95% / 4);
+    width: calc(95% / 3);
     min-height: 10vh;
     display: flex;
     flex-direction: column;
