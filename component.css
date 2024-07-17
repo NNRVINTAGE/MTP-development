@@ -102,7 +102,9 @@ main {
     bottom: 10vh;
     background: url("asset/landing-bg.jpg");
     background-position: center;
-    background-size: cover;background-repeat: no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    image-rendering: optimizeSpeed;
     z-index: -1;
 }
 h1, span {
@@ -274,6 +276,7 @@ h1,
     object-position: center;
     border: 1px solid var(--secondary);
     border-radius: 5px;
+    image-rendering: optimizeSpeed;
 }
 
 footer {
